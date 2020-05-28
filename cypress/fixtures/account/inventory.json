@@ -1,0 +1,159 @@
+{
+    "TotalInventoryCount": 31,
+    "Promotions": {
+        "Deposit": {
+            "IsEligible": true,
+            "IsAvailable": false,
+            "TotalAvailable": 0,
+            "Items": []
+        },
+        "DoubleWinnings": {
+            "IsEligible": true,
+            "IsAvailable": false,
+            "TotalAvailable": 0,
+            "Items": []
+        },
+        "MoneyBack": {
+            "IsEligible": true,
+            "IsAvailable": true,
+            "TotalAvailable": 11,
+            "Items": [
+                {
+                    "PromotionID": 25984,
+                    "PromotionName": "RECON | Bet Return upto $50",
+                    "Description": "All Racing",
+                    "AvailablePromotions": 5,
+                    "Expiry": "2019-12-10T12:59:59Z",
+                    "Grouping": "MoneyBack",
+                    "Url": "/racing-betting/horse-racing"
+                },
+                {
+                    "PromotionID": 26379,
+                    "PromotionName": "E2E Run2Run3 OptIn All Punters",
+                    "Description": "All Racing",
+                    "AvailablePromotions": 2,
+                    "Expiry": "2019-12-10T12:59:59Z",
+                    "Grouping": "MoneyBack",
+                    "Url": "/racing-betting/horse-racing"
+                },
+                {
+                    "PromotionID": 26380,
+                    "PromotionName": "E2E Run2Run3 OptIn All Punters",
+                    "Description": "All Racing",
+                    "AvailablePromotions": 2,
+                    "Expiry": "2019-12-10T12:59:59Z",
+                    "Grouping": "MoneyBack",
+                    "Url": "/racing-betting/horse-racing"
+                },
+                {
+                    "PromotionID": 26844,
+                    "PromotionName": "E2E Run2Run3 OptIn All Punters",
+                    "Description": "All Racing",
+                    "AvailablePromotions": 1,
+                    "Expiry": "2019-12-10T12:59:59Z",
+                    "Grouping": "MoneyBack",
+                    "Url": "/racing-betting/horse-racing"
+                },
+                {
+                    "PromotionID": 26846,
+                    "PromotionName": "E2E Run2Run3 OptIn All Punters",
+                    "Description": "All Racing",
+                    "AvailablePromotions": 1,
+                    "Expiry": "2019-12-10T12:59:59Z",
+                    "Grouping": "MoneyBack",
+                    "Url": "/racing-betting/horse-racing"
+                }
+            ]
+        }
+    },
+    "ContextPromotions": {
+        "Racing": {
+            "Thoroughbreds": {
+                "Type": "MoneyBack",
+                "Description": "RECON | Bet Return upto $50",
+                "Expiry": "2019-12-10T12:59:59Z"
+            },
+            "Harness": {
+                "Type": "MoneyBack",
+                "Description": "RECON | Bet Return upto $50",
+                "Expiry": "2019-12-10T12:59:59Z"
+            },
+            "Greyhounds": {
+                "Type": "MoneyBack",
+                "Description": "RECON | Bet Return upto $50",
+                "Expiry": "2019-12-10T12:59:59Z"
+            }
+        }
+    },
+    "FreeBetBoost": {
+        "IsEligible": true,
+        "IsAvailable": true,
+        "TotalAvailable": 19,
+        "Items": [
+            {
+                "ReferenceID": 23796,
+                "Quantity": 5,
+                "BoostType": "Same Game Multi",
+                "ExpiresBy": "2019-12-10T12:59:59Z",
+                "Url": "/sports-betting",
+                "PromotionName": "Same Game Multi Boost",
+                "Description": "SGM"
+            },
+            {
+                "ReferenceID": 24615,
+                "Quantity": 5,
+                "BoostType": "Exotics",
+                "ExpiresBy": "2019-12-10T12:59:59Z",
+                "Url": "/racing-betting",
+                "PromotionName": "Exotics Boost",
+                "Description": "Exotics Boost"
+            },
+            {
+                "ReferenceID": 24895,
+                "Quantity": 4,
+                "BoostType": "Multi",
+                "ExpiresBy": "2019-12-10T12:59:59Z",
+                "Url": "/sports-betting",
+                "PromotionName": "Multi Boost",
+                "Description": "Multi"
+            },
+            {
+                "ReferenceID": 25988,
+                "Quantity": 4,
+                "BoostType": "Racing",
+                "ExpiresBy": "2019-12-10T12:59:59Z",
+                "Url": "/racing-betting",
+                "PromotionName": "Racing Boost",
+                "Description": "Racing"
+            },
+            {
+                "ReferenceID": 26898,
+                "Quantity": 1,
+                "BoostType": "Racing",
+                "ExpiresBy": "2019-12-10T12:59:59Z",
+                "Url": "/racing-betting",
+                "PromotionName": "E2E Single Boost Promo",
+                "Description": "SingleBoost"
+            }
+        ]
+    },
+    "BonusBets": {
+        "IsEligible": true,
+        "IsAvailable": true,
+        "TotalAvailable": 1,
+        "Items": [
+            {
+                "FreeBetID": 12215818,
+                "PromotionID": 18479,
+                "FreeBetCriteriaID": 3,
+                "IssuedADOperator": "promotions-api",
+                "IssuedDate": "2019-05-13T02:39:17Z",
+                "ExpiryDate": "2019-12-26T03:50:00Z",
+                "FreeBetAmount": 150.0,
+                "WinningTurnoverFactor": 1.0,
+                "SplitGroupID": 0,
+                "Url": "/my-account/#bonus"
+            }
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "chromeWebSecurity": false,
+  "screenshotsFolder": "cypress/screenshots",
+  "reporter": "cypress-multi-reporters",
+  "fixturesFolder": "cypress/fixtures",
+  "integrationFolder": "cypress/integration",
+  "supportFile": "cypress/support/index.js",
+  "pluginsFile": "cypress/plugins/index.js",
+  "video": true,
+  "videosFolder": "cypress/videos",
+  "videoCompression": false,
+  "animationDistanceThreshold": 10,
+  "defaultCommandTimeout": 15000,
+  "taskTimeout": 20000,
+  "pageLoadTimeout": 60000,
+  "execTimeout": 60000,
+  "waitForAnimations": true,
+  "watchForFileChanges": false,
+  "trashAssetsBeforeRuns": true,
+  "reporterOptions": {
+    "configFile": "reporterOptions.json"
+  }
+}

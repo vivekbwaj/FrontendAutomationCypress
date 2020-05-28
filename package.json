@@ -1,0 +1,65 @@
+{
+    "name": "Opensource",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Cypress opensource Framework",
+    "repository": {
+        "url": "https://github.com/vivekbwaj/FrontendAutomationCypress.git"
+    },
+    "scripts": {
+        "clean": "rimraf cypress/reports",
+        "combine-reports": "mochawesome-merge --reportDir cypress/reports/mocha > results/report.json",
+        "generate-report": "marge results/report.json -f report -o results",
+        "cy:open": "cypress open",
+        "cy:ci": " cypress run --env configFile=prod",
+        "chrome:ci": "cypress run --env configFile=prod --browser chrome",
+        "firefox:ci": "cypress run --env configFile=prod --browser firefox",
+        "cy:test": "cypress run --env configFile=prod --spec 'cypress/integration/TC002_Login_Spec.js'",
+        "cy:test:all": "cypress run --env configFile=prod --headed --browser chrome",
+        "cy:chrome": "cypress run --env configFile=prod --headed --browser chrome --spec 'cypress/integration/TC001_LaunchPersonalDemo_spec.js'",
+        "cy:firefox": "cypress run --env configFile=prod --headed --browser firefox --spec 'cypress/integration/TC001_LaunchPersonalDemo_spec.js'"
+    },
+    "keywords": [
+        "node",
+        "cypress",
+        "test",
+        "javascript"
+    ],
+    "author": "Vivek Bhardwaj <vivekbwaj.88@gmail.com>",
+    "maintainers": [
+        "Vivek Bhardwaj"
+    ],
+    "dependencies": {
+        "chalk": "4.0.0",
+        "chance": "^1.1.4",
+        "cross-env": "7.0.0",
+        "cypress": "4.6.0",
+        "date-fns": "^2.12.0",
+        "faker": "4.1.0",
+        "lodash": "^4.17.15",
+        "rimraf": "3.0.2",
+        "uuid": "7.0.3",
+        "localforage": "1.7.3"
+    },
+    "devDependencies": {
+        "@neuralegion/cypress-har-generator": "^5.0.0",
+        "@testing-library/cypress": "^6.0.0",
+        "@testing-library/react": "10.0.3",
+        "concurrently": "^5.2.0",
+        "cypress-file-upload": "^4.0.6",
+        "cypress-multi-reporters": "1.2.4",
+        "cypress-plugin-retries": "^1.5.2",
+        "cypress-react-unit-test": "4.0.0",
+        "cypress-redux": "^1.0.0",
+        "cypress-wait-until": "^1.6.1",
+        "cypress-xpath": "^1.4.0",
+        "eslint-plugin-cypress": "^2.10.3",
+        "fs-extra": "8.1.0",
+        "mocha": "7.1.2",
+        "mochawesome": "6.1.1",
+        "mochawesome-merge": "4.0.3",
+        "mochawesome-report-generator": "5.1.0",
+        "start-server-and-test": "^1.11.0",
+        "validator": "13.0.0"
+    }
+}

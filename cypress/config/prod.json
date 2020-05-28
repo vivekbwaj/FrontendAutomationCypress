@@ -1,0 +1,7 @@
+{
+  "env": {
+    "BASE_URL": "https://demo.bendigobank.com.au/banking/sign_in",
+    "USERNAME": "",
+    "PASSWORD": ""
+  }
+}
