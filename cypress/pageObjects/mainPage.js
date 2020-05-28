@@ -3,7 +3,7 @@
 const launchPersonalDemo = "button[value='personal']";
 const launchBusinessDemo = "button[value='business']";
 
-import { click, enter, selectDropdown, wait } from "../support/actions";
+import { navigate, click,clickLinkText, enter, logInfo } from "../support/actions";
 
 export const mainPage = {
     /**
@@ -20,5 +20,12 @@ export const mainPage = {
      */
     gotoPersonalAccounts() {
         click(launchPersonalDemo);
+    },
+
+        /**
+     * Click "Register" link
+     */
+    gotoRegistrationPage(){
+        clickLinkText('Register');
     },
 };
