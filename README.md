@@ -2,7 +2,7 @@
 <img src="https://cloud.githubusercontent.com/assets/1268976/20607953/d7ae489c-b24a-11e6-9cc4-91c6c74c5e88.png">    
 
 #### Installation:
-- Install *nodejs 12.4.1 lts* [Link](https://nodejs.org/en/download/)
+- Install *nodejs 12.16.3 lts* [Link](https://nodejs.org/en/download/)
 - Install Vscode [link](https://code.visualstudio.com/download)
 
 #### Folder Structure
