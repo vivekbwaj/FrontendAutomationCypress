@@ -39,6 +39,14 @@ export const click = (element) => {
 }
 
 /**
+ * Click
+ * @param {string} linktext
+ */
+export const clickLinkText = (linktext) => {
+    cy.get('a.panel__list-item').contains(linktext).click();
+}
+
+/**
  * Click By xpath
  * @param {Element} element
  */
