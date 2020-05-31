@@ -34,7 +34,7 @@
 - `npm run cy:chrome` run tests in chrome browser
 - `npm run cypress:open` for test development and run(*Test Watcher is set to false*)
 - `npm run cy:test` run all tests in headless
-- `npx cypress run --env configFile=uat --headed --spec 'cypress/integration/TC002_Login_Spec.js'` To run specific test in chrome
+- `npx cypress run --env configFile=uat --headed --spec 'cypress/integration/TC001_PersonalDemoAccounts.js'` To run specific test in chrome
 
 #### Generate Report Locally:
 - `npm run combine-reports` to combine mocha json report
