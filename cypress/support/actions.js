@@ -435,3 +435,10 @@ export const dismissAlert = () => {
         return false;
     })
 }
+/**
+ * Check that the url contains the given path
+ * @param {string} path
+ */
+export const urlContains = (path) => {
+    cy.url().should('contains',path);
+}
