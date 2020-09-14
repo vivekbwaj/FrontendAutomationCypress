@@ -18,10 +18,9 @@ jobs:
         run: |
           npm install
           npm run cy:ci
-      - name: Archive screenshots
-          uses: actions/upload-artifact@v2
-          with:
-            name: screenshots
-            path: cypress/screenshots
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: cypress/screenshots
         env:
           CI: true
