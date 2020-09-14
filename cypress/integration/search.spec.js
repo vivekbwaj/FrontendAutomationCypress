@@ -14,6 +14,7 @@ describe(`Test Search and navigation to product category page`, () => {
         homePage.verifyAllSearchResultsAreCorrect('whey');
         homePage.clickFirstSearchResult();
         homePage.successfullyLandedOnSearchResultsPage('/search','search?query=whey+protein');
+        cy.screenshot();
     });
 });
 
