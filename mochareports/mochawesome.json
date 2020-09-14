@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "suites": 2,
+    "tests": 2,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2020-05-31T09:50:54.652Z",
-    "end": "2020-05-31T09:50:54.652Z",
-    "duration": 5108,
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "failures": 2,
+    "start": "2020-09-10T01:14:40.870Z",
+    "end": "2020-09-10T01:14:40.870Z",
+    "duration": 72623,
+    "testsRegistered": 2,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,49 +18,115 @@
   },
   "results": [
     {
-      "uuid": "f9c3d6ba-3061-41fd-a16c-5e7561d46045",
+      "uuid": "691b456b-e8fe-45ad-9f2b-82c6b1cb3860",
       "title": "",
-      "fullFile": "cypress\\integration\\TC001_PersonalDemoAccounts.spec.js",
-      "file": "cypress\\integration\\TC001_PersonalDemoAccounts.spec.js",
+      "fullFile": "cypress\\integration\\search.spec.js",
+      "file": "cypress\\integration\\search.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "89e0d8af-40ea-430a-9735-e4ffd679645f",
-          "title": "Test accounts information",
+          "uuid": "f6e2502b-9683-4db4-b29b-481a9ee9d4d5",
+          "title": "Test Search and navigation to product category page",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Launch Bendigo Bank Personal Demo",
-              "fullTitle": "Test accounts information Launch Bendigo Bank Personal Demo",
+              "title": "Launch Catch Website > search > Select the first result",
+              "fullTitle": "Test Search and navigation to product category page Launch Catch Website > search > Select the first result",
               "timedOut": null,
-              "duration": 5108,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 38071,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
-              "context": null,
-              "code": "_mainPage.mainPage.navigateToUrl(_config.BASE_URL);\n_mainPage.mainPage.gotoPersonalAccounts();",
-              "err": {},
-              "uuid": "e97afad6-5fda-4cf8-afe0-acf205ae349f",
-              "parentUUID": "89e0d8af-40ea-430a-9735-e4ffd679645f",
+              "context": "\"../cypress/screenshots/search.spec.js/Test Search and navigation to product category page -- Launch Catch Website > search > Select the first result (failed).png\"",
+              "code": "_catchHomepage.homePage.navigateToUrl(_config.BASE_URL);\n_catchHomepage.homePage.enterSearchText('whey protein');\n_catchHomepage.homePage.getSearchResults().should('have.length.greaterThan', 3);\n_catchHomepage.homePage.verifyAllSearchResultsAreCorrect('whey');\n_catchHomepage.homePage.clickFirstSearchResult();\n_catchHomepage.homePage.successfullyLandedOnSearchResultsPage('/search', 'search?query=whey+protein');",
+              "err": {
+                "message": "AssertionError: Timed out retrying: expected '[ <li.css-12595yo.e5u7u070>, 2 more... ]' to have a length above 3 but got 3",
+                "estack": "AssertionError: Timed out retrying: expected '[ <li.css-12595yo.e5u7u070>, 2 more... ]' to have a length above 3 but got 3\n    ./cypress/integration/search.spec.js/</<@https://www.catch.com.au/__cypress/tests?p=cypress\\integration\\search.spec.js:132:48\n    setRunnable/runnable.fn@https://www.catch.com.au/__cypress/runner/cypress_runner.js:170711:45\n    callFn@https://www.catch.com.au/__cypress/runner/cypress_runner.js:104502:21\n    onRunnableRun/<@https://www.catch.com.au/__cypress/runner/cypress_runner.js:176516:28\n    finallyHandler@https://www.catch.com.au/__cypress/runner/cypress_runner.js:6879:23\n    tryCatcher@https://www.catch.com.au/__cypress/runner/cypress_runner.js:10325:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://www.catch.com.au/__cypress/runner/cypress_runner.js:8260:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://www.catch.com.au/__cypress/runner/cypress_runner.js:8317:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://www.catch.com.au/__cypress/runner/cypress_runner.js:8362:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://www.catch.com.au/__cypress/runner/cypress_runner.js:8442:18\n    _drainQueueStep@https://www.catch.com.au/__cypress/runner/cypress_runner.js:5032:12\n    _drainQueue@https://www.catch.com.au/__cypress/runner/cypress_runner.js:5025:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@https://www.catch.com.au/__cypress/runner/cypress_runner.js:5041:16\n    Async/this.drainQueues@https://www.catch.com.au/__cypress/runner/cypress_runner.js:4911:14\n",
+                "diff": ""
+              },
+              "uuid": "37ddd8cd-f18c-41bc-8b95-b8b433cac08a",
+              "parentUUID": "f6e2502b-9683-4db4-b29b-481a9ee9d4d5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "e97afad6-5fda-4cf8-afe0-acf205ae349f"
+          "passes": [],
+          "failures": [
+            "37ddd8cd-f18c-41bc-8b95-b8b433cac08a"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5108,
+          "duration": 38071,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e4d4a726-85db-4043-bcf8-64d28946c399",
+      "title": "",
+      "fullFile": "cypress\\integration\\search.spec.js",
+      "file": "cypress\\integration\\search.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "348878f8-b01c-43c3-8056-326a319e18ab",
+          "title": "Test Search and navigation to product category page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Launch Catch Website > search > Select the first result",
+              "fullTitle": "Test Search and navigation to product category page Launch Catch Website > search > Select the first result",
+              "timedOut": null,
+              "duration": 34552,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"../cypress/screenshots/search.spec.js/Test Search and navigation to product category page -- Launch Catch Website > search > Select the first result (failed).png\"",
+              "code": "_catchHomepage.homePage.navigateToUrl(_config.BASE_URL);\n_catchHomepage.homePage.enterSearchText('whey protein');\n_catchHomepage.homePage.getSearchResults().should('have.length.greaterThan', 3);\n_catchHomepage.homePage.verifyAllSearchResultsAreCorrect('whey');\n_catchHomepage.homePage.clickFirstSearchResult();\n_catchHomepage.homePage.successfullyLandedOnSearchResultsPage('/search', 'search?query=whey+protein');",
+              "err": {
+                "message": "AssertionError: Timed out retrying: expected '[ <li.css-12595yo.e5u7u070>, 2 more... ]' to have a length above 3 but got 3",
+                "estack": "AssertionError: Timed out retrying: expected '[ <li.css-12595yo.e5u7u070>, 2 more... ]' to have a length above 3 but got 3\n    ./cypress/integration/search.spec.js/</<@https://www.catch.com.au/__cypress/tests?p=cypress\\integration\\search.spec.js:132:48\n    setRunnable/runnable.fn@https://www.catch.com.au/__cypress/runner/cypress_runner.js:170711:45\n    callFn@https://www.catch.com.au/__cypress/runner/cypress_runner.js:104502:21\n    onRunnableRun/<@https://www.catch.com.au/__cypress/runner/cypress_runner.js:176516:28\n    finallyHandler@https://www.catch.com.au/__cypress/runner/cypress_runner.js:6879:23\n    tryCatcher@https://www.catch.com.au/__cypress/runner/cypress_runner.js:10325:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://www.catch.com.au/__cypress/runner/cypress_runner.js:8260:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://www.catch.com.au/__cypress/runner/cypress_runner.js:8317:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://www.catch.com.au/__cypress/runner/cypress_runner.js:8362:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://www.catch.com.au/__cypress/runner/cypress_runner.js:8442:18\n    _drainQueueStep@https://www.catch.com.au/__cypress/runner/cypress_runner.js:5032:12\n    _drainQueue@https://www.catch.com.au/__cypress/runner/cypress_runner.js:5025:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@https://www.catch.com.au/__cypress/runner/cypress_runner.js:5041:16\n    Async/this.drainQueues@https://www.catch.com.au/__cypress/runner/cypress_runner.js:4911:14\n",
+                "diff": ""
+              },
+              "uuid": "22a868b4-6472-4a02-a679-e0c5d9a74ada",
+              "parentUUID": "348878f8-b01c-43c3-8056-326a319e18ab",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "22a868b4-6472-4a02-a679-e0c5d9a74ada"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 34552,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

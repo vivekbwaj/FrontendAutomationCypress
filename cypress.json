@@ -17,6 +17,7 @@
   "waitForAnimations": true,
   "watchForFileChanges": false,
   "trashAssetsBeforeRuns": true,
+  "experimentalNetworkStubbing":true,
   "reporterOptions": {
     "configFile": "reporterOptions.json"
   }

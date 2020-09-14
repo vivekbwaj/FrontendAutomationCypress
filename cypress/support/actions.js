@@ -10,7 +10,7 @@ export const navigate = (url) => {
     cy.visit(url, {
         failOnStatusCode: false,
         retryOnNetworkFailure: true,
-        timeout: 30000
+        // timeout: 30000
     }).viewport('macbook-15');
 }
 
@@ -112,6 +112,13 @@ export const check = (element) => {
 export const checkFirst = (element) => {
     cy.get(element).first().check();
 }
+/**
+ * Click first ones
+ * @param {object} list
+ */
+export const clickFirst = (list) => {
+    list.first().click();
+}
 
 /**
  * CheckValue
@@ -138,6 +145,14 @@ export const checkValues = (element, ...value) => {
  */
 export const enter = (element, value) => {
     cy.get(element).type(value);
+}
+
+/**
+ * children
+ * @param {Element} element
+ */
+export const children =(element) =>{
+    return cy.get(element).children();
 }
 
 /**
@@ -303,7 +318,15 @@ export const clearCookie = (cokkie) => {
 export const clearLocalStorageKey = (key) => {
     cy.clearLocalStorage(key);
 }
-
+/**
+ * Verify page landing
+ * @param {pathname} pathname
+ * @param {url} url
+ */
+export const pageLanding = (pathname,url) => {
+    cy.location('pathname').should('eq',pathname);
+    cy.location('href').should('contain',url);
+}
 /**
  * Execute Script
  * @param {script} script

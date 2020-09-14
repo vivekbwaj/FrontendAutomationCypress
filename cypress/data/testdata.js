@@ -19,7 +19,7 @@ export const userDetails = {
 export const creditCard = {
     "DepositAmount": "100",
     "CardName": "Test New",
-    "CardNo": "5555555555554444",
+    "CardNo": "345435345345435",
     "Expiry": "12/21",
     "CVV": "123"
 }
