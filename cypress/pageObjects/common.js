@@ -1,12 +1,12 @@
 /// <reference types="Cypress" />
 
-// const searchBar = "div[role='combobox'] div input";
-// const searchResultsContainer = "div[role='combobox'] div div div ul"
+const clubCatch = 'a[href="/shop/club-catch/"]';
+
 
 import { navigate, click, pageLanding, enter, logInfo,children,clickFirst } from "../support/actions";
 
 export const common = {
- 
+
     /**
      * Verify that all search results contain the keyword
      * @param {string} counttext
@@ -17,5 +17,13 @@ export const common = {
             cy.log(cartCountText);
             expect(cartCountText).to.equal(counttext);
         });
+    },
+
+    /**
+     * Verify that all search results contain the keyword
+     * @param {clubCatch} clubCatch
+     */
+    goToClubCatchPage(){
+        cy.get(clubCatch).click();
     }
 };

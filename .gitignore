@@ -6,3 +6,6 @@
 /results/**
 /reports/mocha/*
 /mochawesome-report/
+debug.log
+mochareports/mochawesome.json
+mochareports/report.html
