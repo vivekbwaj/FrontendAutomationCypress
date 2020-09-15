@@ -9,3 +9,4 @@
 debug.log
 mochareports/mochawesome.json
 mochareports/report.html
+cypress/har/*
