@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: cypress/browsers:node14.7.0-chrome84
+      image: cypress/browsers:node12.18.0-chrome83-ff77
 
     steps:
       - uses: actions/checkout@v1
@@ -17,6 +17,7 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
+          node --version
           npm run cy:ci
       - uses: actions/upload-artifact@v2
         with:
