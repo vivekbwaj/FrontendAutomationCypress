@@ -21,7 +21,7 @@ jobs:
           npm run cy:ci
       - uses: actions/upload-artifact@v2
         with:
-          name: my-artifact
+          name: results
           path: cypress/screenshots
         env:
           CI: true
