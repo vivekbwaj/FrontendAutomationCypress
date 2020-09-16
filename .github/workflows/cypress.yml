@@ -5,22 +5,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: cypress/browsers:node12.16.2-chrome81-ff75
-
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: npm install, build, and test
-        run: |
-          npm ci
-          npm run cy:ci
-      - uses: actions/upload-artifact@v2
-        with:
-          name: results
-          path: cypress/screenshots/**
-        env:
-          CI: true
+      - name: Build the stack
+        run: docker-compose up
