@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: cypress/browsers:node12.18.0-chrome83-ff77
+      image: cypress/browsers:node12.16.2-chrome81-ff75
 
     steps:
       - uses: actions/checkout@v1
@@ -16,12 +16,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm install, build, and test
         run: |
-          npm install
-          node --version
+          npm ci
           npm run cy:ci
       - uses: actions/upload-artifact@v2
         with:
           name: results
-          path: cypress/screenshots
+          path: cypress/screenshots/**
         env:
           CI: true
