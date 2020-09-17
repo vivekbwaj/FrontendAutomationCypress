@@ -11,10 +11,10 @@
         "combine-reports": "mochawesome-merge ./cypress/reports/mocha/*.json > mochareports/mochawesome.json",
         "generate-report": "marge mochareports/mochawesome.json -f report -o mochareports",
         "cy:open": "cypress open",
-        "cy:ci": "cypress run --env configFile=prod --browser chrome --headless --spec 'cypress/integration/**.spec.js'",
+        "cy:ci": "cypress run --env configFile=prod --browser chrome --headless --spec 'cypress/integration/mocking.spec.js'",
         "chrome:ci": "cypress run --env configFile=prod --browser chrome",
         "firefox:ci": "cypress run --env configFile=prod --browser firefox",
-        "cy:test": "cypress run --env configFile=prod --spec 'cypress/integration/search.spec.js'",
+        "cy:test": "cypress run --env configFile=prod --spec 'cypress/integration/mocking.spec.js'",
         "cy:test:all": "cypress run --env configFile=prod --headed --browser chrome",
         "cy:chrome": "cypress run --env configFile=prod --headed --browser chrome --spec 'cypress/integration/search.spec.js'",
         "cy:firefox": "cypress run --env configFile=prod --headed --browser firefox --spec 'cypress/integration/search.spec.js'"

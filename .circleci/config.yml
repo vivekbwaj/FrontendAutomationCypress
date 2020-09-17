@@ -42,10 +42,16 @@ jobs:
       - run:
           name: Running cypress tests
           command: npm run cy:ci
+      - run:
+          name: Combine and generate reports
+          command: num run combine-reports
+          command: npm run generate-report
       - store_artifacts:
           path: cypress/videos
       - store_artifacts:
           path: cypress/screenshots
+      - store_artifacts:
+          path: /mochareports/
 
 workflows:
   version: 2
