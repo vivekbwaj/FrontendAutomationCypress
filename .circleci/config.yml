@@ -53,7 +53,7 @@ jobs:
       - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
-          path: /mochareports/
+          path: mochareports/
 
 workflows:
   version: 2
