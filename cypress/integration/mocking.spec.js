@@ -22,5 +22,6 @@ describe("Test mocking of api requests using route2", () => {
         }); //route2() doesn't support specifying alias
         homePage.navigateToUrl(BASE_URL);
         common.verifyCartCount('100');
+        cy.screenshot();
     });
 });
