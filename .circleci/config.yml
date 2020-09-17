@@ -44,7 +44,7 @@ jobs:
           command: npm run cy:ci
       - run:
           name: Combine reports
-          command: num run combine-reports
+          command: npm run combine-reports
       - run:
           name: Generate report
           command: npm run generate-report
