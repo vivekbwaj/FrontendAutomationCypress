@@ -11,7 +11,7 @@
         "combine-reports": "mochawesome-merge ./cypress/reports/mocha/*.json > mochareports/mochawesome.json",
         "generate-report": "marge mochareports/mochawesome.json -f report -o mochareports",
         "cy:open": "cypress open",
-        "cy:ci": "cypress run --env configFile=prod --browser chrome --headless --spec 'cypress/integration/search.spec.js'",
+        "cy:ci": "cypress run --env configFile=prod --browser chrome --headless --spec 'cypress/integration/**.spec.js'",
         "chrome:ci": "cypress run --env configFile=prod --browser chrome",
         "firefox:ci": "cypress run --env configFile=prod --browser firefox",
         "cy:test": "cypress run --env configFile=prod --spec 'cypress/integration/search.spec.js'",
@@ -60,6 +60,7 @@
         "mochawesome-merge": "4.1.0",
         "mochawesome-report-generator": "5.1.0",
         "start-server-and-test": "^1.11.3",
-        "validator": "13.1.1"
+        "validator": "13.1.1",
+        "write-yaml": "^1.0.0"
     }
 }
