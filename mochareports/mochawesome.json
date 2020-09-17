@@ -1,16 +1,16 @@
 {
   "stats": {
-    "suites": 8,
-    "tests": 8,
-    "passes": 6,
-    "pending": 1,
-    "failures": 1,
-    "start": "2020-09-15T01:50:32.727Z",
-    "end": "2020-09-15T01:50:32.727Z",
-    "duration": 201532,
-    "testsRegistered": 8,
-    "passPercent": 75,
-    "pendingPercent": 12.5,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-09-17T13:09:41.471Z",
+    "end": "2020-09-17T13:09:41.471Z",
+    "duration": 33818,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c632986d-c273-4ec7-a727-9646166681e1",
+      "uuid": "6d0149e0-f889-4134-b8e3-0662f08c7849",
       "title": "",
       "fullFile": "cypress\\integration\\search.spec.js",
       "file": "cypress\\integration\\search.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7e62f849-e1f0-4b55-bb7a-6ed8e8fc27f0",
+          "uuid": "9cc8bdc9-ab70-43fe-be73-eaa6e837af2f",
           "title": "Test Search and navigation to product category page",
           "fullFile": "",
           "file": "",
@@ -38,185 +38,7 @@
               "title": "Launch Catch Website > search > Select the first result",
               "fullTitle": "Test Search and navigation to product category page Launch Catch Website > search > Select the first result",
               "timedOut": null,
-              "duration": 31741,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": "\"../cypress/screenshots/search.spec.js/Test Search and navigation to product category page -- Launch Catch Website > search > Select the first result (failed).png\"",
-              "code": "_catchHomepage.homePage.navigateToUrl(_config.BASE_URL);\n_catchHomepage.homePage.enterSearchText('whey protein');\n_catchHomepage.homePage.getSearchResults().should('have.length.greaterThan', 3);\n_catchHomepage.homePage.verifyAllSearchResultsAreCorrect('whey');\n_catchHomepage.homePage.clickFirstSearchResult();\n_catchHomepage.homePage.successfullyLandedOnSearchResultsPage('/search', 'search?query=whey+protein');",
-              "err": {
-                "message": "AssertionError: Timed out retrying: expected '[ <li.css-12595yo.e5u7u070>, 2 more... ]' to have a length above 3 but got 3",
-                "estack": "AssertionError: Timed out retrying: expected '[ <li.css-12595yo.e5u7u070>, 2 more... ]' to have a length above 3 but got 3\n    at Context.eval (https://www.catch.com.au/__cypress/tests?p=cypress\\integration\\search.spec.js:132:48)",
-                "diff": ""
-              },
-              "uuid": "30f4a502-64cf-4f51-a531-3216cf021e65",
-              "parentUUID": "7e62f849-e1f0-4b55-bb7a-6ed8e8fc27f0",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [],
-          "failures": [
-            "30f4a502-64cf-4f51-a531-3216cf021e65"
-          ],
-          "pending": [],
-          "skipped": [],
-          "duration": 31741,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "079d0e2e-458f-4fc1-81e0-0dfdf9dfdb0d",
-      "title": "",
-      "fullFile": "cypress\\integration\\search.spec.js",
-      "file": "cypress\\integration\\search.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "c09b043b-832c-467d-975b-e36079b6ac68",
-          "title": "Test Search and navigation to product category page",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Launch Catch Website > search > Select the first result",
-              "fullTitle": "Test Search and navigation to product category page Launch Catch Website > search > Select the first result",
-              "timedOut": null,
-              "duration": 48996,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "_catchHomepage.homePage.navigateToUrl(_config.BASE_URL);\n_catchHomepage.homePage.enterSearchText('whey protein');\n_catchHomepage.homePage.getSearchResults().should('have.length.greaterThan', 0);\n_catchHomepage.homePage.verifyAllSearchResultsAreCorrect('whey');\n_catchHomepage.homePage.clickFirstSearchResult();\n_catchHomepage.homePage.successfullyLandedOnSearchResultsPage('/search', 'search?query=whey+protein');",
-              "err": {},
-              "uuid": "5f761649-b77b-45eb-b96e-e7ea9c75920b",
-              "parentUUID": "c09b043b-832c-467d-975b-e36079b6ac68",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "5f761649-b77b-45eb-b96e-e7ea9c75920b"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 48996,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "ebd7505d-bf5c-4084-b5b8-b1ca58ac8818",
-      "title": "",
-      "fullFile": "cypress\\integration\\search.spec.js",
-      "file": "cypress\\integration\\search.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "b903bd21-a7c2-41c2-83ec-a577b3a59e2b",
-          "title": "Test Search and navigation to product category page",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Launch Catch Website > search > Select the first result",
-              "fullTitle": "Test Search and navigation to product category page Launch Catch Website > search > Select the first result",
-              "timedOut": null,
-              "duration": 24046,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "_catchHomepage.homePage.navigateToUrl(_config.BASE_URL);\n_catchHomepage.homePage.enterSearchText('whey protein');\n_catchHomepage.homePage.getSearchResults().should('have.length.greaterThan', 0);\n_catchHomepage.homePage.verifyAllSearchResultsAreCorrect('whey');\n_catchHomepage.homePage.clickFirstSearchResult();\n_catchHomepage.homePage.successfullyLandedOnSearchResultsPage('/search', 'search?query=whey+protein');",
-              "err": {},
-              "uuid": "2040e444-d1bd-43cc-81ee-3a968315c106",
-              "parentUUID": "b903bd21-a7c2-41c2-83ec-a577b3a59e2b",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "2040e444-d1bd-43cc-81ee-3a968315c106"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 24046,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "b0afaedb-7725-4b53-9383-431f13b7e8fa",
-      "title": "",
-      "fullFile": "cypress\\integration\\search.spec.js",
-      "file": "cypress\\integration\\search.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "57c4c96d-c660-432d-85d8-78c6a195ed24",
-          "title": "Test Search and navigation to product category page",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Launch Catch Website > search > Select the first result",
-              "fullTitle": "Test Search and navigation to product category page Launch Catch Website > search > Select the first result",
-              "timedOut": null,
-              "duration": 25508,
+              "duration": 33818,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -225,252 +47,20 @@
               "context": null,
               "code": "_catchHomepage.homePage.navigateToUrl(_config.BASE_URL);\n_catchHomepage.homePage.enterSearchText('whey protein');\n_catchHomepage.homePage.getSearchResults().should('have.length.greaterThan', 0);\n_catchHomepage.homePage.verifyAllSearchResultsAreCorrect('whey');\n_catchHomepage.homePage.clickFirstSearchResult();\n_catchHomepage.homePage.successfullyLandedOnSearchResultsPage('/search', 'search?query=whey+protein');\ncy.screenshot();",
               "err": {},
-              "uuid": "b4ac878f-3cc1-4f52-8c9e-ec88b0e0288c",
-              "parentUUID": "57c4c96d-c660-432d-85d8-78c6a195ed24",
+              "uuid": "e1f1a0ce-90e9-4332-aa11-0fa0f475abff",
+              "parentUUID": "9cc8bdc9-ab70-43fe-be73-eaa6e837af2f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b4ac878f-3cc1-4f52-8c9e-ec88b0e0288c"
+            "e1f1a0ce-90e9-4332-aa11-0fa0f475abff"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 25508,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "b7946973-7e7c-4f6c-ae7a-387042c185b2",
-      "title": "",
-      "fullFile": "cypress\\integration\\catch.homepage.spec.js",
-      "file": "cypress\\integration\\catch.homepage.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "86db76cf-758f-4fea-b76f-3d6e425cb28f",
-          "title": "Test Login",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Launch Catch Website > goto login page and login",
-              "fullTitle": "Test Login Launch Catch Website > goto login page and login",
-              "timedOut": null,
-              "duration": 0,
-              "state": "pending",
-              "speed": null,
-              "pass": false,
-              "fail": false,
-              "pending": true,
-              "context": null,
-              "code": "",
-              "err": {},
-              "uuid": "f688257c-ed72-46c3-b922-a5eb5fd4bc2d",
-              "parentUUID": "86db76cf-758f-4fea-b76f-3d6e425cb28f",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [],
-          "failures": [],
-          "pending": [
-            "f688257c-ed72-46c3-b922-a5eb5fd4bc2d"
-          ],
-          "skipped": [],
-          "duration": 0,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "e54e9e54-cfd2-4d65-81f4-d3c5088a2813",
-      "title": "",
-      "fullFile": "cypress\\integration\\homepage.xhr.spec.js",
-      "file": "cypress\\integration\\homepage.xhr.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "91165a54-6750-4f55-970c-d6cd1ba34178",
-          "title": "Validate some xhr requests on homepage",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Assert some xhr requests",
-              "fullTitle": "Validate some xhr requests on homepage Assert some xhr requests",
-              "timedOut": null,
-              "duration": 12800,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.server();\ncy.route('POST', '**/v2/event/custom').as(\"customXHR\");\ncy.route('GET', '**/meta.json').as(\"metaXHR\");\n_catchHomepage.homePage.navigateToUrl(_config.BASE_URL);\ncy.get(\"@customXHR\").then(function (xhr) {\n  expect(xhr.status).to.eq(200);\n});\ncy.get('@metaXHR').its('response.body').should('have.property', 'clubActive').and('eql', false);",
-              "err": {},
-              "uuid": "7dab92b1-bddc-4e96-afbc-2da777647db4",
-              "parentUUID": "91165a54-6750-4f55-970c-d6cd1ba34178",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "7dab92b1-bddc-4e96-afbc-2da777647db4"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 12800,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "5ab31907-9edd-461c-8cbf-1cfe619d9ba8",
-      "title": "",
-      "fullFile": "cypress\\integration\\mocking.spec.js",
-      "file": "cypress\\integration\\mocking.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "9030e64e-9de1-4504-85ef-fc12585df24b",
-          "title": "Test mocking of api requests using route2",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Launch Website and mock meta.json api using route2",
-              "fullTitle": "Test mocking of api requests using route2 Launch Website and mock meta.json api using route2",
-              "timedOut": null,
-              "duration": 13139,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.fixture(\"meta.json\").then(function (json) {\n  cy.route2(\"GET\", \"**/meta.json\", json);\n}); //route2() doesn't support specifying alias\n_catchHomepage.homePage.navigateToUrl(_config.BASE_URL);\n_common.common.verifyCartCount('100');",
-              "err": {},
-              "uuid": "5250f90c-3059-4f73-9bee-c760d03f27fe",
-              "parentUUID": "9030e64e-9de1-4504-85ef-fc12585df24b",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "5250f90c-3059-4f73-9bee-c760d03f27fe"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 13139,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "d416a7d6-f023-4d99-b53f-8cc986424e9c",
-      "title": "",
-      "fullFile": "cypress\\integration\\search.spec.js",
-      "file": "cypress\\integration\\search.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "a26f135a-9485-4ab2-aa12-d6af3e296902",
-          "title": "Test Search and navigation to product category page",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Launch Catch Website > search > Select the first result",
-              "fullTitle": "Test Search and navigation to product category page Launch Catch Website > search > Select the first result",
-              "timedOut": null,
-              "duration": 45302,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "_catchHomepage.homePage.navigateToUrl(_config.BASE_URL);\n_catchHomepage.homePage.enterSearchText('whey protein');\n_catchHomepage.homePage.getSearchResults().should('have.length.greaterThan', 0);\n_catchHomepage.homePage.verifyAllSearchResultsAreCorrect('whey');\n_catchHomepage.homePage.clickFirstSearchResult();\n_catchHomepage.homePage.successfullyLandedOnSearchResultsPage('/search', 'search?query=whey+protein');\ncy.screenshot();",
-              "err": {},
-              "uuid": "f1cdaf38-0967-450c-9808-b123bbb67644",
-              "parentUUID": "a26f135a-9485-4ab2-aa12-d6af3e296902",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "f1cdaf38-0967-450c-9808-b123bbb67644"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 45302,
+          "duration": 33818,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
