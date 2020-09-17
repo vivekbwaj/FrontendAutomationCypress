@@ -43,8 +43,10 @@ jobs:
           name: Running cypress tests
           command: npm run cy:ci
       - run:
-          name: Combine and generate reports
+          name: Combine reports
           command: num run combine-reports
+      - run:
+          name: Generate report
           command: npm run generate-report
       - store_artifacts:
           path: cypress/videos
