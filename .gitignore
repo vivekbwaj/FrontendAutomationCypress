@@ -10,3 +10,4 @@ debug.log
 cypress/har/*
 mochareports/report.html
 mochareports/mochawesome.json
+mochareports/assets/*
