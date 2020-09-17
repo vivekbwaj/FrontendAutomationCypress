@@ -7,4 +7,7 @@
 /reports/mocha/*
 debug.log
 cypress/har/*
-/mochareports/**
+/mochareports/assets/**
+/mochareports/mochawesome.json
+/mochareports/report.html
+
