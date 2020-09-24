@@ -2,6 +2,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const chalk = require('chalk');
 const timeStamp = require('date-fns');
+const percyHealthCheck = require("@percy/cypress/task");
 const { install, ensureBrowserFlags  } = require('@neuralegion/cypress-har-generator');
 
 let logTime = timeStamp.format(new Date(), 'yyyy-MM-dd hh:mm:ss');
@@ -50,6 +51,10 @@ module.exports = (on, config) => {
       return null
     }
   });
+
+    // `on` is used to hook into various events Cypress emits
+  // `config` is the resolved Cypress config
+  on("task", percyHealthCheck);
 
   const file = config.env.configFile || 'prod'
 

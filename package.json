@@ -17,7 +17,8 @@
         "cy:test": "cypress run --env configFile=prod --spec 'cypress/integration/mocking.spec.js'",
         "cy:test:all": "cypress run --env configFile=prod --headed --browser chrome",
         "cy:chrome": "cypress run --env configFile=prod --headed --browser chrome --spec 'cypress/integration/search.spec.js'",
-        "cy:firefox": "cypress run --env configFile=prod --headed --browser firefox --spec 'cypress/integration/search.spec.js'"
+        "cy:firefox": "cypress run --env configFile=prod --headed --browser firefox --spec 'cypress/integration/search.spec.js'",
+        "percytest": "percy exec -- node ./run-tests.js"
     },
     "keywords": [
         "node",
@@ -36,16 +37,18 @@
         "cypress": "5.2.0",
         "date-fns": "^2.14.0",
         "faker": "5.1.0",
+        "localforage": "1.7.3",
         "lodash": "^4.17.20",
         "rimraf": "3.0.2",
-        "uuid": "8.3.0",
-        "localforage": "1.7.3"
+        "uuid": "8.3.0"
     },
     "devDependencies": {
         "@neuralegion/cypress-har-generator": "^5.0.1",
+        "@percy/cypress": "^2.3.1",
         "@testing-library/cypress": "^7.0.0",
         "@testing-library/react": "11.0.4",
         "concurrently": "^5.3.0",
+        "http-server": "0.12.3",
         "cypress-file-upload": "^4.1.1",
         "cypress-multi-reporters": "1.4.0",
         "cypress-react-unit-test": "4.13.0",

@@ -14,7 +14,8 @@ describe("Test Login", () => {
         // .get('input[name="login[email]"]').type('vivekbwaj.88@gmail.com')
         // .get('input[name="login[password]"]').type('password')
         // .get('button[id="button-login"]').click()
-        .wait(4000);
+        .wait(4000)
+        .percySnapshot('loginpage');
     });
 
 });

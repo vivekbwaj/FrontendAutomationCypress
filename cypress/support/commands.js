@@ -1,6 +1,7 @@
 import 'cypress-file-upload';
 import '@testing-library/cypress/add-commands';
 import 'cypress-wait-until';
+import '@percy/cypress'
 
 /**
  * Get Auth Token
