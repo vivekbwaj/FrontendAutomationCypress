@@ -34,7 +34,7 @@
         "chalk": "4.1.0",
         "chance": "^1.1.7",
         "cross-env": "7.0.2",
-        "cypress": "5.2.0",
+        "cypress": "5.3.0",
         "date-fns": "^2.14.0",
         "faker": "5.1.0",
         "localforage": "1.7.3",
